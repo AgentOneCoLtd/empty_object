@@ -9,5 +9,5 @@ export function isEmptyObject(val: any): val is emptyObject {
         throw new Error('OBJECT_EXPECTED');
     }
 
-    return Object.keys(val).length === 0;
+    return Object.keys(val as Object).length === 0;
 }
