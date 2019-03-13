@@ -1,0 +1,3 @@
+# EmptyObject Type
+
+EmptyObject means `{}`.
