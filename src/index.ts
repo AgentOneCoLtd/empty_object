@@ -5,11 +5,12 @@ export type emptyObject = {};
  * @param  val anything
  * @return     true if emptyObject, else false
  */
-// tslint:disable-next-line no-any
+// eslint-disable-next-line @typescript-eslint/no-explicit-any
 export function isEmptyObject(val: any): val is emptyObject {
     if (!(val instanceof Object) || val instanceof Array) {
         return false;
     }
 
-    return Object.keys(<Object>val).length === 0;
+    // eslint-disable-next-line @typescript-eslint/no-explicit-any
+    return Object.keys(val as Record<string, any>).length === 0;
 }

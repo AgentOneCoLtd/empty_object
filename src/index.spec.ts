@@ -8,7 +8,7 @@ it('should return true (new Object())', () => {
     expect(isEmptyObject(new Object())).toBe(true);
 });
 
-it('should return false ({ foo: \'bar\' })', () => {
+it("should return false ({ foo: 'bar' })", () => {
     expect(isEmptyObject({ foo: 'bar' })).toBe(false);
 });
 
