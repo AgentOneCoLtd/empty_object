@@ -1,3 +1,7 @@
+## v1.1.2
+* Update README.me
+* Use github workflow to test and publish to npm
+
 ## v1.1.1
 * Upgrade libs
 
